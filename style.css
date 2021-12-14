@@ -1,0 +1,83 @@
+.hero {
+    position: relative;
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: "";
+    background-image: url("https://i.imgur.com/jivLiLS.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.8;
+    border-radius: 10px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    
+}
+
+h1 {
+    position: relative;
+    color: rgb(39, 37, 37);
+    font-size: 5rem;
+    line-height: 0.9;
+    text-align: center;
+}
+
+.subtitle {
+    list-style-type: none;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(155, 5, 5);
+    border-radius: 10px;
+}
+
+.tile {
+    border-radius: 10%/50%;
+    float: left;
+    width: 21%;
+    padding: 10px;
+    margin: 30px;
+    height: 250px;
+}
+
+.dept-text {
+    color: rgb(241, 235, 235);
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    padding: 10px;
+    border-radius: 10%/50%;
+    opacity: 0.95;
+    background:rgb(39, 37, 37)
+}
+
+.photographs {
+    background-image: url("https://i.imgur.com/cY6uiUI.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.drawings {
+    background-image: url("https://i.imgur.com/lDpxqwO.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.modern-art {
+    background-image: url("https://i.imgur.com/hoRdXSj.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
