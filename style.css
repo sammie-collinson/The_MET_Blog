@@ -45,11 +45,13 @@ h1 {
 
 .tile {
     border-radius: 10%/50%;
-    float: left;
-    width: 21%;
+    width: 50%;
     padding: 10px;
-    margin: 30px;
-    height: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 17rem;
 }
 
 .dept-text {
