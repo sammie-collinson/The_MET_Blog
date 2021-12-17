@@ -12,8 +12,6 @@ const getPhotoIds = async function (ids){
             return index.primaryImage !== "";
         });
 
-        console.log(onlyWithImgs);
-
         let newDiv = document.createElement('div');
         let headerTag = document.createElement('h4');
         let authorTag = document.createElement('h5');
@@ -73,6 +71,7 @@ function scrollFunction() {
         mybutton.style.display = "none";
     }
 }
+
 window.onscroll = function() {scrollFunction()};
 
 function topFunction() {
