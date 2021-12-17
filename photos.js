@@ -7,10 +7,22 @@ const getPhotoIds = async function (ids){
     
     const getObjects = async (ids) => {
         const response = await axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${ids}`);
-        const objectIds = response.data;
-        // console.log(objectIds);
-        imageArr.push(objectIds.primaryImage);
-        console.log((imageArr)); 
+        imageArr.push(response.data.primaryImage);
+        console.log(imageArr);
+
+        let newDiv = document.createElement('div');
+        let headerTag = document.createElement('h4');
+        headerTag.classList.add('dept-text');
+        headerTag.innerText = 'test';
+        let newImg = document.createElement('img');
+        newImg.src = imageArr[0];
+        newImg.classList.add('content');
+        newDiv.appendChild(headerTag);
+        newDiv.appendChild(newImg);
+        document.body.appendChild(newDiv);
+
+
+
         
     }
     let imageArr = [];
@@ -21,8 +33,6 @@ const getPhotoIds = async function (ids){
 for (i = 0; i < depts.length; i++) {
     getPhotoIds(depts[i]);
 }
-
-// let newDiv = document.createElement('newDiv')
 
 
 // "https://collectionapi.metmuseum.org/public/collection/v1/objects/[objectID]"
