@@ -84,10 +84,10 @@ img {
 
 .content {
     border-radius: 15%;
-    width: 70%;
+    width: 35%;
     padding: 10px;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 31%;
+    margin-right: 31%;
     margin-top: 10px;
     margin-bottom: 10px;
     height: 17rem;   
@@ -99,7 +99,7 @@ img {
     text-align: center;
     color: black;
     border-radius: 15%;
-    width: 65%;
+    width: 30%;
     margin: 0 auto;
     padding: 15px;
     opacity: 0.95;

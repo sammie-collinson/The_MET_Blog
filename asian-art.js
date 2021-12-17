@@ -1,4 +1,4 @@
-const depts = [15];
+const depts = [6];
 
 const getPhotoIds = async function (ids){
     const response = await axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/objects?departmentIds=${ids}`);
