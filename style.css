@@ -85,6 +85,7 @@ img {
 
 .mouseover {
     opacity: 1;
+    color: rgb(155, 5, 5);
 }
 
 .content {

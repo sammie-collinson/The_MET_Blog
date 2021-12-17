@@ -14,7 +14,8 @@ const getPhotoIds = async function (ids){
 
         let newDiv = document.createElement('div');
         let headerTag = document.createElement('h4');
-        let dateTag = document.createElement('p');
+        let authorTag = document.createElement('h5');
+        let dateTag = document.createElement('h5');
         headerTag.classList.add('img-desc');
 
         for (i=0; i < onlyWithImgs.length; i++){
@@ -24,6 +25,15 @@ const getPhotoIds = async function (ids){
                 headerTag.innerText = onlyWithImgs[i].title;
             }
         }
+
+        for (i = 0; i < onlyWithImgs.length; i++){
+            if (onlyWithImgs[i].artistDisplayName == "") {
+                authorTag.innerText = "Artist Unkown"
+            } else {
+                authorTag.innerText = `artist: ${onlyWithImgs[i].artistDisplayName}`
+            }
+        }
+
         for (i=0; i < onlyWithImgs.length; i++){
             dateTag.innerText = `date: ${onlyWithImgs[i].objectDate}`;
         }
@@ -36,9 +46,10 @@ const getPhotoIds = async function (ids){
 
         newImg.classList.add('content');
         newDiv.appendChild(headerTag);
+        headerTag.appendChild(authorTag);
         headerTag.appendChild(dateTag);
         newDiv.appendChild(newImg);
-        document.body.appendChild(newDiv);   
+        document.body.appendChild(newDiv);  
     }
     let objArr = [];
     for (i = 0; i < 25; i++) {
@@ -48,3 +59,6 @@ const getPhotoIds = async function (ids){
 for (i = 0; i < depts.length; i++) {
     getPhotoIds(depts[i]);
 }
+
+const body = document.querySelector('div');
+console.log(body);
