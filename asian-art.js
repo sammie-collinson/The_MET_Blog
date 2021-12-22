@@ -61,20 +61,19 @@ for (i = 0; i < depts.length; i++) {
 }
 
 //Scroll to top button:
-const mybutton = document.getElementById("myBtn");
+const myButton = document.getElementById("myBtn");
 
-
-function scrollFunction() {
+scrollFunction = () => {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "initial";
+        myButton.style.display = "initial";
     } else {
-        mybutton.style.display = "none";
+        myButton.style.display = "none";
     }
 }
 
 window.onscroll = function() {scrollFunction()};
 
-function topFunction() {
+topFunction = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
