@@ -71,7 +71,9 @@ scrollFunction = () => {
     }
 }
 
-window.onscroll = function() {scrollFunction()};
+window.addEventListener('scroll', () => {
+    scrollFunction();
+})
 
 topFunction = () => {
   document.body.scrollTop = 0;
